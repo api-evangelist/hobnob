@@ -1,21 +1,46 @@
 aid: hobnob
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hobnob.png
 name: Hobnob
-description: 'Hobnob is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Hobnob is a consumer event and community-organizing platform (hobnob.app)
+  for iOS, Android, and web. It lets people create custom video and photo invitations,
+  deliver them by text message, track RSVPs, sell tickets, run sign-up lists, time
+  polls, and announcements, and coordinate private group "Spaces" for chat and content
+  sharing. Built on a Hawaii-inspired philosophy of real-world connection over engagement-maximizing
+  social media, Hobnob reports 20 million invitations sent, roughly 35,000 events per
+  month, 650,000 Spaces created, and 90,000+ five-star reviews. It is a Norwest Venture
+  Partners portfolio company. No public developer API, SDK, or documentation surface
+  was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/hobnob/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - norwest-venture-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: consumer-app-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Events
+- Invitations
+- RSVP
+- Ticketing
+- Community
+- Social
+- Consumer
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hobnob-domain-security.yml
 - type: Website
   url: https://hobnob.app
+- type: Blog
+  url: https://hobnob.app/blogs/
+- type: PrivacyPolicy
+  url: https://hobnob.app/privacy/
+- type: TermsOfService
+  url: https://hobnob.app/terms/
+- type: SignUp
+  url: https://hobnob.app/sign-up
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
